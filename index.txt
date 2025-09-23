@@ -50,7 +50,7 @@
     <div id="menuModal" class="modal">
       <span class="close">&times;</span>
       <div class="modal-content">
-       <img src="g.png" alt="Karikku Street Food Menu" class="menu-image"> 
+       <img src="g.jpg" alt="Karikku Street Food Menu" class="menu-image"> 
       </div>
     </div>
   </section>
@@ -101,5 +101,6 @@
   </script>
 </body>
 </html>
+
 
 
