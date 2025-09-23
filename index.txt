@@ -3,7 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Karikku Street Food</title>
+  <title>Karikku Street Food | Authentic Kerala Taste</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Karikku Street Food - Authentic Kerala street food served fresh from our food truck. Enjoy Kerala snacks, specials, and traditional dishes in Vakkotty.">
+  <meta name="keywords" content="Karikku, Street Food, Kerala Food, Food Truck, Kerala Snacks, Vakkotty Food, South Indian Food">
+  <meta name="author" content="Karikku Street Food">
+
+  <!-- Open Graph (for social sharing) -->
+  <meta property="og:title" content="Karikku Street Food | Authentic Kerala Taste">
+  <meta property="og:description" content="Authentic Kerala street food, made fresh and served from our food truck. Taste Kerala in every bite!">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://karikkustreetfood.github.io/Karikku-Street-Food/">
+  <meta property="og:image" content="https://karikkustreetfood.github.io/Karikku-Street-Food/images/preview.jpg">
+
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
@@ -11,13 +24,13 @@
 <body>
   <!-- Header / Navbar -->
   <header>
-    <h1>🥥 Karikku Street Food</h1>
+    <h1> Karikku Street Food</h1>
     <nav>
       <a href="#menu">Menu</a>
       <a href="#about">About</a>
       <a href="#hours">Opening Time</a>
       <a href="#contact">Contact</a>
-      <a href="#order">Order</a>
+      <a href="#order">Pickup</a>
     </nav>
   </header>
 
@@ -36,8 +49,8 @@
     <!-- Hidden Menu Popup -->
     <div id="menuModal" class="modal">
       <span class="close">&times;</span>
-      <div class="modal-paper">
-        <img src="images/g.jpg" alt="Karikku Street Food Menu" class="menu-image">
+      <div class="modal-content">
+       <img src="g.png" alt="Karikku Street Food Menu" class="menu-image"> 
       </div>
     </div>
   </section>
@@ -60,14 +73,20 @@
   <!-- Contact -->
   <section id="contact">
     <h2>Contact Us</h2>
-    <p>Email: <a href="mailto:karikkustreetfood@gmail.com">karikkustreetfood@gmail.com</a></p>
+    <p>Email: <a href="mailto:karikkustreetfood@gmail.com">Karikkustreetfoodltd@gmail.com</a></p>
     <p>Phone: <a href="tel:+917349625505">07349 625505</a></p>
-    <p>Follow us on Instagram: <a href="https://www.instagram.com/karikkustreetfd?igsh=MWhubXdkcnpyeDN6Zg==" target="_blank">@karikkustreetfd</a></p>
+    <p>Follow us on Instagram: <a href="https://www.instagram.com/karikkustreetfd" target="_blank">@karikkustreetfd</a></p>
+  </section>
+
+  <!-- Pickup Notice -->
+  <section id="order">
+    <h2>Pickup Orders Only</h2>
+    <p>🚚 We are currently <strong>not taking delivery orders</strong>, but you can <strong>pickup</strong> at our food truck!</p>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>© 2025 Karikku Street Food. All rights reserved.</p>
+    <p>© 2025 Karikku Street Food. All rights reserved. | Authentic Kerala Taste</p>
   </footer>
 
   <!-- Script for Modal -->
@@ -82,3 +101,5 @@
   </script>
 </body>
 </html>
+
+
