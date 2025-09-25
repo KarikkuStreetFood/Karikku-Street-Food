@@ -14,20 +14,22 @@
   <meta property="og:url" content="https://karikkustreetfood.github.io/Karikku-Street-Food/">
   <meta property="og:image" content="https://karikkustreetfood.github.io/Karikku-Street-Food/images/preview.jpg">
 
-  <!-- Google Font & Icons (Font Awesome for icons) -->
+  <!-- Google Font & Icons -->
   <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
   <style>
-    /* Background overlay & image */
+    /* 🌄 Background overlay & image */
     body {
       min-height: 100vh;
       margin: 0;
       font-family: 'Poppins', Arial, sans-serif;
       color: #222;
-      background: linear-gradient(rgba(255,248,240,0.90), rgba(255,248,240,0.97)), url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80') no-repeat center center fixed;
+      background: linear-gradient(rgba(255,248,240,0.6), rgba(255,248,240,0.6)), 
+        url('bg3.png') 
+        no-repeat center center fixed;
       background-size: cover;
     }
+    /* ↑ Change the URL above to set a new background image */
 
     header {
       background: rgba(255,112,67, 0.95);
@@ -37,22 +39,14 @@
       box-shadow: 0 4px 8px rgba(0,0,0,0.13);
       border-bottom-left-radius: 20px;
       border-bottom-right-radius: 20px;
-      position: relative;
-      z-index: 2;
     }
 
     header h1 {
       font-family: 'Baloo Bhai 2', cursive;
       font-size: 2.8em;
-      margin: 0 0 6px 0;
+      margin: 0;
       letter-spacing: 2px;
       text-shadow: 1px 2px 4px rgba(0,0,0,0.13);
-      animation: fadeInDown 1.5s;
-    }
-
-    @keyframes fadeInDown {
-      0% {transform: translateY(-40px); opacity: 0;}
-      100% {transform: translateY(0); opacity: 1;}
     }
 
     nav {
@@ -61,8 +55,6 @@
       flex-wrap: wrap;
       gap: 22px;
       margin-top: 8px;
-      z-index: 3;
-      position: relative;
     }
 
     nav a {
@@ -73,18 +65,16 @@
       border-radius: 6px;
       font-size: 1.07em;
       background: rgba(230,74,25,0.11);
-      transition: background 0.3s, box-shadow 0.3s, transform 0.2s;
+      transition: 0.3s;
     }
 
-    nav a:hover, nav a:focus {
+    nav a:hover {
       background: #ffbf73;
       color: #d84315;
       transform: translateY(-2px) scale(1.09);
-      box-shadow: 0 2px 9px rgba(255,112,67,0.10);
-      outline: none;
     }
 
-    /* Hero section */
+    /* Hero */
     .hero {
       text-align: center;
       padding: 110px 22px 58px 22px;
@@ -93,14 +83,6 @@
       margin: 30px auto 22px auto;
       max-width: 1200px;
       box-shadow: 0 10px 36px rgba(0,0,0,0.08);
-      position: relative;
-      overflow: hidden;
-      animation: fadeHero 1.8s;
-    }
-
-    @keyframes fadeHero {
-      0% {opacity: 0; transform: translateY(60px);}
-      100% {opacity: 1; transform: translateY(0);}
     }
 
     .hero h2 {
@@ -108,14 +90,11 @@
       font-weight: bold;
       color: #ce3a10;
       margin-bottom: 18px;
-      letter-spacing: 1px;
     }
 
     .hero p {
       font-size: 1.22em;
       color: #653e0d;
-      margin-bottom: 0;
-      letter-spacing: .5px;
     }
 
     /* Section Styling */
@@ -127,15 +106,12 @@
       max-width: 1020px;
       border-radius: 13px;
       box-shadow: 0 5px 14px rgba(0,0,0,0.05);
-      position: relative;
     }
 
     section h2 {
       font-size: 2.1em;
       color: #ff7043;
       margin-bottom: 13px;
-      font-family: inherit;
-      letter-spacing: .5px;
     }
 
     /* Button */
@@ -150,16 +126,15 @@
       font-size: 1.12em;
       box-shadow: 0 4px 12px rgba(0,0,0,0.14);
       cursor: pointer;
-      transition: background 0.3s, transform 0.2s;
+      transition: 0.3s;
       margin-top: 22px;
     }
-    .order-btn:hover, .order-btn:focus {
+    .order-btn:hover {
       background: #e64a19;
       transform: translateY(-3px) scale(1.03);
-      outline: none;
     }
 
-    /* Modal Styling */
+    /* Modal */
     .modal {
       display: none;
       position: fixed;
@@ -170,12 +145,6 @@
       overflow: auto;
       background-color: rgba(0,0,0,0.93);
       text-align: center;
-      animation: fadeInModal .5s;
-    }
-
-    @keyframes fadeInModal {
-      0% {opacity: 0;}
-      100% {opacity: 1;}
     }
 
     .modal-content {
@@ -186,23 +155,13 @@
       margin: auto;
       width: 95%;
       max-width: 700px;
-      box-shadow: 0 12px 30px rgba(0,0,0,0.23);
       text-align: center;
-      position: relative;
-      animation: popIn .7s;
-    }
-    @keyframes popIn {
-      0% {transform: scale(0.7);}
-      80% {transform: scale(1.07);}
-      100% {transform: scale(1);}
     }
 
     .menu-image {
       width: 97%;
       max-width: 600px;
-      height: auto;
       border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.16);
     }
 
     .close {
@@ -213,29 +172,17 @@
       font-size: 45px;
       font-weight: bold;
       cursor: pointer;
-      z-index: 10;
-    }
-    .close:hover {
-      color: #fed401;
-      text-shadow: 0 0 12px #fffedb;
     }
 
-    /* Footer Enhancement */
+    /* Footer */
     footer {
       background: rgba(255,112,67, 0.97);
       color: #fff;
-      padding: 38px 10px 26px 10px;
+      padding: 38px 10px;
       text-align: center;
-      font-size: 1.04em;
-      font-weight: 500;
       margin-top: 35px;
       border-top-left-radius: 25px;
       border-top-right-radius: 25px;
-      box-shadow: 0 -3px 14px rgba(0,0,0,0.08);
-      letter-spacing: .6px;
-      /* Sticky footer */
-      position: relative;
-      z-index: 20;
     }
 
     .footer-grid {
@@ -244,64 +191,29 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      align-items: center;
       gap: 38px;
     }
+
     .footer-grid .contact-item {
       display: flex;
       align-items: center;
       gap: 9px;
-      margin: 6px 0;
       font-size: 1em;
-      flex-shrink: 1;
-      word-break: break-all;
     }
+
     .footer-grid .contact-item i {
-      font-size: 1.25em;
       color: #fff4d8;
-      background: #e64a19d6;
-      border-radius: 50%;
-      padding: 7px;
-      box-shadow: 0 2px 10px #d8431530;
-      margin-right: 4px;
+      font-size: 1.25em;
     }
-    .footer-social {
-      margin-top: 11px;
-      font-size: 1.13em;
-    }
-    .footer-social a {
-      color: #fffbe9;
-      display: inline-block;
-      margin: 0 13px;
-      font-size: 1.34em;
-      transition: color 0.3s, transform .2s;
-    }
-    .footer-social a:hover {
-      color: #ffe971;
-      transform: scale(1.18) rotate(-6deg);
-    }
+
     .footer-copy {
-      font-size: 0.97em;
-      color: #fff7e6;
-      margin-top: 17px;
-      opacity: 0.92;
+      font-size: 0.9em;
+      opacity: 0.9;
     }
 
-    /* Section Link Colors */
-    a { color: #ea5e27; }
-    a:hover { color: #b65a20; }
-
-    /* Responsive Design */
     @media (max-width: 650px) {
-      .hero { padding: 58px 14px 38px; }
-      section { padding: 35px 8px 22px; }
-      .menu-image { width: 100%; }
       nav { gap: 12px; }
-      header h1 { font-size: 1.64em; }
-    }
-    @media (max-width: 480px) {
-      .footer-grid { flex-direction: column; gap: 18px; }
-      .footer-copy { font-size: 0.91em; }
+      header h1 { font-size: 1.8em; }
     }
   </style>
 </head>
@@ -314,23 +226,21 @@
     <a href="#menu">Menu</a>
     <a href="#about">About</a>
     <a href="#hours">Opening Time</a>
-    <a href="#contact">Contact</a>
-    <a href="#order">Pickup</a>
+    <a href="#order">Notice</a>
   </nav>
 </header>
 
-<!-- Hero Section -->
+<!-- Hero -->
 <section class="hero">
   <h2>Authentic Kerala Food, Made Fresh in Front of You</h2>
   <p>From street snacks to signature dishes – right from our food truck!</p>
 </section>
 
-<!-- Menu Section -->
+<!-- Menu -->
 <section id="menu">
   <h2>Our Menu</h2>
   <p>Click below to view our full menu</p>
   <button id="menuBtn" class="order-btn">📋 View Menu</button>
-  <!-- Modal Popup -->
   <div id="menuModal" class="modal">
     <span class="close">&times;</span>
     <div class="modal-content">
@@ -339,7 +249,7 @@
   </div>
 </section>
 
-<!-- About Section -->
+<!-- About -->
 <section id="about">
   <h2>About Karikku</h2>
   <p>Karikku Street Food is a dream project of two passionate food lovers.<br>
@@ -347,57 +257,37 @@
      From this food truck, we bring you authentic South Indian (Kerala) food along with our signature creations, served fresh and made right in front of you.</p>
 </section>
 
-<!-- Opening Time -->
+<!-- Hours -->
 <section id="hours">
   <h2>Opening Time</h2>
   <p>🕒 Daily: 6:00 PM – 10:00 PM</p>
-  <p>📍 Location: <a href="https://maps.app.goo.gl/tgfctChah8MecJFR9" target="_blank">View on Google Maps</a></p>
+  <p>📍 <a href="https://maps.app.goo.gl/tgfctChah8MecJFR9" target="_blank">View on Google Maps</a></p>
 </section>
 
-
-<!-- Pickup Notice -->
+<!-- Notice -->
 <section id="order">
-  <h2>Pickup Orders Only</h2>
-  <p> We are currently <strong>not taking delivery orders</strong>, but you can <strong>pickup</strong> at our food truck!</p>
+  <h2>Notice</h2>
+  <p><strong>Sorry, we are currently not taking online orders.</strong></p>
 </section>
 
-<!-- Stylish Footer with Contact + Social -->
+<!-- Footer -->
 <footer>
   <div class="footer-grid">
-    <div class="contact-item">
-      <i class="fa-solid fa-envelope"></i>
-      <a href="mailto:Karikkustreetfoodltd@gmail.com" style="color:#fff;">Karikkustreetfoodltd@gmail.com</a>
-    </div>
-    <div class="contact-item">
-      <i class="fa-solid fa-phone"></i>
-      <a href="tel:+917349625505" style="color:#fff;">07349 625505</a>
-    </div>
-    <div class="contact-item">
-      <i class="fa-brands fa-instagram"></i>
-      <a href="https://www.instagram.com/karikkustreetfd" target="_blank" style="color:#fff;">@karikkustreetfd</a>
-    </div>
-    <div class="contact-item">
-      <i class="fa-solid fa-map-marker-alt"></i>
-      <a href="https://maps.app.goo.gl/tgfctChah8MecJFR9" target="_blank" style="color:#fff;">Find Us in Google Map</a>
-    </div>
-  </div>
-  <div class="footer-social">
-    <a href="https://www.instagram.com/karikkustreetfd" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-    <a href="mailto:Karikkustreetfoodltd@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
-    <a href="tel:+917349625505" title="Phone"><i class="fas fa-phone-alt"></i></a>
-    <a href="https://maps.app.goo.gl/tgfctChah8MecJFR9" target="_blank" title="Location"><i class="fas fa-map-marker-alt"></i></a>
+    <div class="contact-item"><i class="fa-solid fa-envelope"></i><a href="mailto:Karikkustreetfoodltd@gmail.com">Karikkustreetfoodltd@gmail.com</a></div>
+    <div class="contact-item"><i class="fa-solid fa-phone"></i><a href="tel:+917349625505">07349 625505</a></div>
+    <div class="contact-item"><i class="fa-brands fa-instagram"></i><a href="https://www.instagram.com/karikkustreetfd" target="_blank">@karikkustreetfd</a></div>
+    <div class="contact-item"><i class="fa-solid fa-map-marker-alt"></i><a href="https://maps.app.goo.gl/tgfctChah8MecJFR9" target="_blank">Find Us on Google Map</a></div>
   </div>
   <div class="footer-copy">
-    <span>© 2025 Karikku Street Food. All rights reserved. | Authentic Kerala Taste</span>
+    © 2025 Karikku Street Food. All rights reserved. | Authentic Kerala Taste
   </div>
 </footer>
 
-<!-- Modal Script -->
+<!-- Script for Modal -->
 <script>
-  // Menu Modal Popup
-  const modal = document.getElementById('menuModal');
-  const btn = document.getElementById('menuBtn');
-  const span = document.getElementsByClassName('close')[0];
+  const modal = document.getElementById("menuModal");
+  const btn = document.getElementById("menuBtn");
+  const span = document.getElementsByClassName("close")[0];
 
   btn.onclick = () => modal.style.display = "block";
   span.onclick = () => modal.style.display = "none";
